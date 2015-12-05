@@ -40,13 +40,27 @@
     "url": "https://github.com/compute-io/bootstrap/issues"
   },
   "dependencies": {
+    "compute-add": "^2.0.0",
+    "compute-incrspace": "^1.0.2",
+    "compute-lt": "^1.1.0",
+    "compute-median": "^2.0.0",
+    "compute-multiply": "^1.0.0",
+    "compute-subtract": "^2.0.0",
+    "compute-sum": "^2.0.0",
     "compute-to-matrix": "^1.0.0",
+    "compute-variance": "^3.0.0",
+    "distributions-normal-cdf": "0.0.1",
     "dstructs-matrix": "^2.0.0",
-    "validate.io-array": "^1.0.6"
+    "validate.io-array": "^1.0.6",
+    "validate.io-array-like": "^1.0.1",
+    "validate.io-matrix-like": "^1.0.2",
+    "validate.io-object": "^1.0.4",
+    "validate.io-string-primitive": "^1.0.0"
   },
   "devDependencies": {
     "chai": "3.x.x",
     "codecov.io": "^0.1.5",
+    "compute-skewness": "^1.0.0",
     "istanbul": "^0.3.0",
     "jshint": "2.x.x",
     "jshint-stylish": "2.x.x",
