@@ -12,9 +12,7 @@ var bootstrap = require( './../lib' ),
 // Bootstrap for sample median:
 
 data = randomNormal( 1000 );
-out = bootstrap( data, function( d ) {
-	return median( d );
-}, 500 );
+out = bootstrap( data, median, 500 );
 
 // Calculate different confidence intervals:
 
