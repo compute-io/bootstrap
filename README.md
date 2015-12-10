@@ -76,6 +76,8 @@ The package exports a function to calculate confidence intervals, which is descr
 
 #### .ci( out[, opts] )
 
+With the `ci` function, one can construct confidence intervals. The `out` argument can be either a single output object or an [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) of output objects returned from `bootstrap`.
+
 ``` javascript
 var rNorm = require( 'distributions-normal-random' ),
 	data = rNorm( 1000, { mu: 3, sigma: 2 } )
