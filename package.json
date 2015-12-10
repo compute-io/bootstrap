@@ -43,8 +43,8 @@
     "compute-add": "^2.0.0",
     "compute-incrspace": "^1.0.2",
     "compute-lt": "^1.1.0",
-    "compute-median": "^2.0.0",
     "compute-multiply": "^1.0.0",
+    "compute-sqrt": "^3.0.1",
     "compute-subtract": "^2.0.0",
     "compute-sum": "^2.0.0",
     "compute-to-matrix": "^1.0.0",
@@ -58,11 +58,13 @@
     "validate.io-matrix-like": "^1.0.2",
     "validate.io-number-primitive": "^1.0.0",
     "validate.io-object": "^1.0.4",
+    "validate.io-positive-integer": "^1.0.0",
     "validate.io-string-primitive": "^1.0.0"
   },
   "devDependencies": {
     "chai": "3.x.x",
     "codecov.io": "^0.1.5",
+    "compute-median": "^2.0.0",
     "compute-skewness": "^1.0.0",
     "distributions-normal-random": "0.0.0",
     "istanbul": "^0.3.0",
