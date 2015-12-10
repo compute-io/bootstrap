@@ -80,15 +80,15 @@ With the `ci` function, one can construct confidence intervals. The `out` argume
 
 ``` javascript
 var rNorm = require( 'distributions-normal-random' ),
-	data = rNorm( 1000, { mu: 3, sigma: 2 } )
+	data = rNorm( 1000, { mu: 3, sigma: 2, seed: 7 } ),
 	out,
 	ci;
 
-out = bootstrap( data, median, 500, { seed: 19 } );
+out = bootstrap( data, median, 1000, { seed: 19 } );
 
 // 95% CI for the median (using BCA method):
-bootstrap.ci( out )
-// returns [ ~2.963, ~3.071 ]
+ci = bootstrap.ci( out )
+// returns [ ~2.735, ~3.030 ]
 ```
 
 The function accepts the following `options`:
@@ -100,16 +100,16 @@ The function accepts the following `options`:
 To calculate a confidence interval of a different type, use the `type` option:
 
 ``` javascript
-bootstrap.ci( out, { type: 'percentile' } )
-// returns [ ~2.966, ~3.074 ]
+ci = bootstrap.ci( out, { type: 'percentile' } );
+// returns [ ~2.735, ~3.030 ]
 ```
 See the corresponding [Wikipedia article](https://en.wikipedia.org/wiki/Bootstrapping_%28statistics%29#Methods_for_bootstrap_confidence_intervals) for an explanation of the various types.
 
-To set the significance level to another value than `0.95`, use the `level` option:
+To set the significance level to a different value than `0.95`, use the `level` option:
 
 ``` javascript
 bootstrap.ci( out, { level: 0.9 } )
-// returns [ ~2.912, ~3.172 ]
+// returns [ ~2.773, ~3.022 ]
 ```
 
 If `type` is set to `studentized`, we need to supply a vector of variances for the `bootstrapped statistic at each bootstrap replication.
