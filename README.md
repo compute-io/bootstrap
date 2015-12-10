@@ -69,10 +69,10 @@ The function accepts the following `options`:
 
 *	__seed__: positive integer used as a seed to initialize the random number generator for creating the bootstrap replications.
 
-The [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) returned by the `bootstrap` function (or the [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) elements in the case of multiple statistics) contain also
+The [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) returned by the `bootstrap` function (or the [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) elements in the case of multiple statistics) contains also
+non-enumerable properties `realizations`, `data` and `statFun`, which contain the realizations of the statistic for each bootstrap sample, the original data and the function used to calculate the statistic, respectively.
 
-
-The package also exports a function to calculate confidence intervals, which is described next.
+The package exports a function to calculate confidence intervals, which is described next.
 
 #### .ci( out[, opts] )
 
