@@ -26,10 +26,16 @@ Given input data in form of a [`matrix`](https://github.com/dstructs/matrix) or 
 *	__bias__: the difference between `original` and the bootstrap estimate of the mean for the statistic of interest, i.e. its sample mean calculated over all bootstrap replications
 
 ``` javascript
-var data = [ 3, 5, 8, 9, 1, 2, 12, 3, 22, 4, 8, 12, 15, 18, 12, 7, 6, 4, 2, 0, 0, 1, 3, 17, 5, 2, 19, 7, 17, 16 ],
+var data,
 	median = require( 'compute-median' ),
 	variance = require( 'compute-variance' ),
 	out;
+
+data = [
+	3, 5, 8, 9, 1, 2, 12, 3, 22, 4, 8,
+	12, 15, 18, 12, 7, 6, 4, 2, 0, 0, 1,
+	3, 17, 5, 2, 19, 7, 17, 16
+];
 
 out = bootstrap( data, median, 1000, { seed: 22 } ;
 /*
@@ -197,23 +203,23 @@ $ make view-cov
 Copyright &copy; 2015. The [Compute.io](https://github.com/compute-io) Authors.
 
 
-[npm-image]: http://img.shields.io/npm/v/bootstrap.svg
-[npm-url]: https://npmjs.org/package/bootstrap
+[npm-image]: http://img.shields.io/npm/v/compute-bootstrap.svg
+[npm-url]: https://npmjs.org/package/compute-bootstrap
 
-[travis-image]: http://img.shields.io/travis//master.svg
-[travis-url]: https://travis-ci.org/
+[travis-image]: http://img.shields.io/travis/compute-io/bootstrap/master.svg
+[travis-url]: https://travis-ci.org/compute-io/bootstrap
 
-[codecov-image]: https://img.shields.io/codecov/c/github//master.svg
-[codecov-url]: https://codecov.io/github/?branch=master
+[codecov-image]: https://img.shields.io/codecov/c/github/compute-io/bootstrap/master.svg
+[codecov-url]: https://codecov.io/github/compute-io/bootstrap?branch=master
 
-[dependencies-image]: http://img.shields.io/david/.svg
-[dependencies-url]: https://david-dm.org/
+[dependencies-image]: http://img.shields.io/david/compute-io/bootstrap.svg
+[dependencies-url]: https://david-dm.org/compute-io/bootstrap
 
-[dev-dependencies-image]: http://img.shields.io/david/dev/.svg
-[dev-dependencies-url]: https://david-dm.org/dev/
+[dev-dependencies-image]: http://img.shields.io/david/dev/compute-io/bootstrap.svg
+[dev-dependencies-url]: https://david-dm.org/dev/compute-io/bootstrap
 
-[github-issues-image]: http://img.shields.io/github/issues/.svg
-[github-issues-url]: https://github.com//issues
+[github-issues-image]: http://img.shields.io/github/issues/compute-io/bootstrap.svg
+[github-issues-url]: https://github.com/compute-io/bootstrap/issues
 
 [mocha]: http://mochajs.org/
 [chai]: http://chaijs.com
